@@ -188,7 +188,7 @@ class Component extends DCLogic {
   }
   sendRsvp(e) {
     // Google Sheet web-app URL goes here once the RSVP sheet is set up.
-    const RSVP_ENDPOINT = '';
+    const RSVP_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyNqizDhNnTiHxBkvq8n8SUU_6LnVfQ2INNiZUV4_fsUTmaMMrb9i9T7-qCtYwFJfh0vg/exec';
     const form = e && e.currentTarget && e.currentTarget.closest ? e.currentTarget.closest('form') : null;
     const data = {};
     if (form) Array.from(form.elements).forEach((el) => { if (el.name) data[el.name] = el.value.trim(); });
