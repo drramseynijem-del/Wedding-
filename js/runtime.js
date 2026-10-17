@@ -29,14 +29,16 @@
       if (n.t === 'sc-for') {
         var list = get(ctx, /\{\{([^}]+)\}\}/.exec(n.a.list)[1]) || [];
         var as = n.a.as || 'item';
+        var group = [];
         for (var k = 0; k < list.length; k++) {
           var c2 = Object.assign({}, ctx); c2[as] = list[k]; c2.$index = k;
-          out.push.apply(out, build(n.c, c2));
+          group.push.apply(group, build(n.c, c2));
         }
+        out.push(group); // keep one stable slot so siblings are never re-created
         continue;
       }
       if (n.t === 'sc-if') {
-        if (get(ctx, /\{\{([^}]+)\}\}/.exec(n.a.value)[1])) out.push.apply(out, build(n.c, ctx));
+        out.push(get(ctx, /\{\{([^}]+)\}\}/.exec(n.a.value)[1]) ? build(n.c, ctx) : null); // stable slot
         continue;
       }
       var props = {};
