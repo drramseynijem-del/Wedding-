@@ -13,7 +13,7 @@
     return v;
   }
   function fixUrl(s) {
-    return s.indexOf('/_blob/') === -1 ? s : s.replace(/\/_blob\/([0-9a-f]{32})/g, function (_, id) { return ASSETS[id] || ('assets/' + id); });
+    return s.indexOf('/_blob/') === -1 ? s : s.replace(/\/_blob\/([0-9a-f]{32})/g, function (_, id) { return ASSETS[id] || ('/assets/' + id); });
   }
   function interp(str, ctx, raw) {
     var m = /^\{\{([^}]+)\}\}$/.exec(str);
