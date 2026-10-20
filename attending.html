@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>See you in Vallarta · Ramsey &amp; Daniela</title>
+<meta name="description" content="Ramsey &amp; Daniela are getting married. May 29, 2027 · Garza Blanca, Puerto Vallarta.">
+<meta property="og:title" content="Ramsey &amp; Daniela · May 29, 2027">
+<meta property="og:description" content="Join us in Puerto Vallarta for our wedding weekend.">
+<meta property="og:image" content="https://daniandramsey.com/assets/2d86380bdfae46ef6763d0c4af0d2133.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E3B4A'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='26' fill='%23F7F2EA'%3ER%26D%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F2EA}
+a{color:#0E3B4A}a:hover{color:#2F6F84}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.rise{opacity:0;animation:rise 1s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.15s}.d2{animation-delay:.35s}.d3{animation-delay:.55s}.d4{animation-delay:.75s}
+.lift{transition:transform .4s ease,box-shadow .4s ease}
+.lift:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(14,59,74,.12)}
+.btn{transition:background .3s ease,color .3s ease}
+.btn:hover{background:#2F6F84;color:#F7F2EA}
+.btn-ghost{transition:background .3s ease,color .3s ease}
+.btn-ghost:hover{background:#0E3B4A;color:#F7F2EA}
+.check{transition:background .3s ease,border-color .3s ease,transform .3s ease}
+.check:hover{transform:scale(1.06)}
+.cbx-box{transition:background .3s ease,transform .3s ease}.cbx:hover .cbx-box{transform:scale(1.08)}.cbx:focus-visible{outline:2px solid #2F6F84;outline-offset:4px;border-radius:6px}
+.step{transition:opacity .4s ease,background .4s ease}
+.bar{transition:width .6s cubic-bezier(.2,.7,.2,1)}
+.lang-sw{background:none;border:0;padding:6px 4px;font-family:Jost,sans-serif;font-size:12px;letter-spacing:2px;cursor:pointer}
+@container (max-width:640px){.navback{display:none}}
+@keyframes bkFade{from{opacity:0}to{opacity:1}}
+@keyframes bkPop{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes bkUp{from{transform:translateY(100%)}to{transform:none}}
+.bk-overlay{position:fixed;inset:0;z-index:100;background:rgba(9,32,40,.55);display:flex;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;animation:bkFade .3s ease both;font-family:Jost,sans-serif;color:#1F2E33}
+.bk-panel{position:relative;width:min(640px,100%);max-height:min(88vh,900px);display:flex;flex-direction:column;background:#F7F2EA;border-radius:18px;box-shadow:0 30px 80px rgba(9,32,40,.35);overflow:hidden;animation:bkPop .4s cubic-bezier(.2,.75,.25,1) both}
+.bk-body{flex:1 1 auto;overflow-y:auto;overscroll-behavior:contain;padding:44px 40px 32px;display:flex;flex-direction:column;gap:34px}
+.bk-foot{flex:0 0 auto;border-top:1px solid rgba(14,59,74,.14);background:#F7F2EA;padding:16px 40px 20px;display:flex;flex-direction:column;gap:12px;box-shadow:0 -10px 24px rgba(247,242,234,.9)}
+.bk-close{position:absolute;top:14px;right:14px;z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid rgba(14,59,74,.25);background:#F7F2EA;color:#0E3B4A;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .3s,color .3s}
+.bk-close:hover{background:#0E3B4A;color:#F7F2EA}
+.bk-panel a:focus-visible,.bk-panel button:focus-visible{outline:2px solid #2F6F84;outline-offset:3px}
+.bk-h{margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:26px;line-height:1.15;color:#0E3B4A}
+.bk-p{margin:0;font-size:15px;line-height:1.7;color:#3E4C50}
+.bk-link{background:none;border:0;padding:8px 4px;font-family:Jost,sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#0E3B4A;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+@media (max-width:640px){
+.bk-overlay{padding:0;align-items:flex-end}
+.bk-panel{width:100%;height:100%;max-height:100dvh;border-radius:0;animation:bkUp .45s cubic-bezier(.2,.8,.2,1) both}
+.bk-body{padding:64px 20px 28px;gap:30px}
+.bk-foot{padding:14px 20px calc(16px + env(safe-area-inset-bottom))}
+.bk-row{flex-direction:column}
+}
+@media (min-width:641px){.bk-dd{text-align:right}
+}
+@media (prefers-reduced-motion:reduce){.bk-overlay,.bk-panel{animation:none}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script src="/js/preact.min.js"></script>
+<script>window.__ASSETS = {"ab693557d96786502fbcc4ea758d55a0":"/assets/ab693557d96786502fbcc4ea758d55a0.jpg","a4b6a89d4c1d5288295799bb47fa12bf":"/assets/a4b6a89d4c1d5288295799bb47fa12bf.jpg","6cf683c7713db8250ad46ca3c2c030d3":"/assets/6cf683c7713db8250ad46ca3c2c030d3.jpg","f8117b38b8c33f1aa09337f292a25049":"/assets/f8117b38b8c33f1aa09337f292a25049.jpg","825919e321d958735366855f2335caa8":"/assets/825919e321d958735366855f2335caa8.jpg","46caac39e9fd25d814f842db36e60e63":"/assets/46caac39e9fd25d814f842db36e60e63.jpg","665388485d423a7066844a567f4ad402":"/assets/665388485d423a7066844a567f4ad402.jpg","f6727ffe0de448f1aef11256dc8e3442":"/assets/f6727ffe0de448f1aef11256dc8e3442.jpg","e1e09995d62629cc33865b43f3f080f7":"/assets/e1e09995d62629cc33865b43f3f080f7.jpg","5d23dd5417fc12f114c2f4a8e9b1e5dd":"/assets/5d23dd5417fc12f114c2f4a8e9b1e5dd.jpg","b2ee5a2ee0d7ef3ba15b2d54a25c2704":"/assets/b2ee5a2ee0d7ef3ba15b2d54a25c2704.jpg","2c33f2e223f218d4b08e3d3448a75c76":"/assets/2c33f2e223f218d4b08e3d3448a75c76.jpg","1ce19f0b925c9201c14b79be7a48cf30":"/assets/1ce19f0b925c9201c14b79be7a48cf30.jpg","488378bfe52f60b3826ee1cfbd61ae26":"/assets/488378bfe52f60b3826ee1cfbd61ae26.jpg","c0563f02d6a4d2703cdab14a917738a5":"/assets/c0563f02d6a4d2703cdab14a917738a5.jpg","3c00b3fa507a5ef5c737af1deb73203e":"/assets/3c00b3fa507a5ef5c737af1deb73203e.jpg","747dbd3c5ad1c21305a9a654a176d7c3":"/assets/747dbd3c5ad1c21305a9a654a176d7c3.jpg","6f85a28a7c5713426a99a271ab5f24ef":"/assets/6f85a28a7c5713426a99a271ab5f24ef.jpg","c485c995729f2f1e86b4b6b7fbd0be9e":"/assets/c485c995729f2f1e86b4b6b7fbd0be9e.jpg","f06891fc1b560cc1ace91fb3a82a02e8":"/assets/f06891fc1b560cc1ace91fb3a82a02e8.jpg","fa9940c1ce8632ceb7919f25992916a5":"/assets/fa9940c1ce8632ceb7919f25992916a5.jpg","08f5883ccb479166a36b002b408b9a0f":"/assets/08f5883ccb479166a36b002b408b9a0f.jpg","728e54be20837977b201f90f0e6261d8":"/assets/728e54be20837977b201f90f0e6261d8.jpg","bb34d2d1da676c1be787bb7a754c591f":"/assets/bb34d2d1da676c1be787bb7a754c591f.jpg","32a48e9df7635941875f925cb5909814":"/assets/32a48e9df7635941875f925cb5909814.jpg","2a91cf780ffbf2cddf27b8705560fac3":"/assets/2a91cf780ffbf2cddf27b8705560fac3.mp4","be466e279c59a4bb011e6423ef99f54f":"/assets/be466e279c59a4bb011e6423ef99f54f.jpg","2d86380bdfae46ef6763d0c4af0d2133":"/assets/2d86380bdfae46ef6763d0c4af0d2133.jpg","dcbf16fdee1c892d880508d334b867e7":"/assets/dcbf16fdee1c892d880508d334b867e7.jpg","b4ad83b1b60043f535b6d8545cdc78d4":"/assets/b4ad83b1b60043f535b6d8545cdc78d4.jpg","c4fa804a50cb034e1e5c66958b8c10e0":"/assets/c4fa804a50cb034e1e5c66958b8c10e0.jpg","62b0151ea113b1241f1273bb8a5e5ffa":"/assets/62b0151ea113b1241f1273bb8a5e5ffa.jpg","cf65ecccc72ab5ee3e5b8a1a3a33331c":"/assets/cf65ecccc72ab5ee3e5b8a1a3a33331c.jpg","4609e58ff4288683b2beb4878ce9f796":"/assets/4609e58ff4288683b2beb4878ce9f796.jpg","61254dd5e925aaac9a0bee929408c4fb":"/assets/61254dd5e925aaac9a0bee929408c4fb.jpg","4fe4dfc8baa7fb59101d7ebed5ad564a":"/assets/4fe4dfc8baa7fb59101d7ebed5ad564a.jpg","33d554b6e44aa3076bb8d15941a4654a":"/assets/33d554b6e44aa3076bb8d15941a4654a.jpg","cf6b2cbbeb39d90534990d6365ae0f8c":"/assets/cf6b2cbbeb39d90534990d6365ae0f8c.jpg","7ca12a4d466021bb2b06976a1352b77c":"/assets/7ca12a4d466021bb2b06976a1352b77c.jpg","9f316be48450a50adb8e7a8f273d95c8":"/assets/9f316be48450a50adb8e7a8f273d95c8.jpg","9bc2195b139ba5bd1b5829a8838cbdbc":"/assets/9bc2195b139ba5bd1b5829a8838cbdbc.jpg","da1e892c89771e2b9589bfc60459ef6b":"/assets/da1e892c89771e2b9589bfc60459ef6b.jpg","e4559aa16b015cee7f99796d7ff9fdd1":"/assets/e4559aa16b015cee7f99796d7ff9fdd1.jpg","c9952f650fc63ad86aae011f79634bbc":"/assets/c9952f650fc63ad86aae011f79634bbc.jpg","5ebe92d277389ca23d6926ab2eb55cda":"/assets/5ebe92d277389ca23d6926ab2eb55cda.jpg","521a97e3e623d0c0188963ec6b07ecd1":"/assets/521a97e3e623d0c0188963ec6b07ecd1.jpg","ca871a340762617f3a2fb240e755d51f":"/assets/ca871a340762617f3a2fb240e755d51f.jpg","5d8a637f1ef95cf621eee072f958dbac":"/assets/5d8a637f1ef95cf621eee072f958dbac.jpg","8fa852207df7bdef410ac93ca2d1580c":"/assets/8fa852207df7bdef410ac93ca2d1580c.jpg","d6efe37d71e2faeccb53cd1178814e0c":"/assets/d6efe37d71e2faeccb53cd1178814e0c.jpg","02597e4aa1651ee3f5d0425c3068f330":"/assets/02597e4aa1651ee3f5d0425c3068f330.jpg","510d272888e092d5d7db4ae3f62d4c43":"/assets/510d272888e092d5d7db4ae3f62d4c43.jpg","dc667e1340d7a981805611dbb86e2e04":"/assets/dc667e1340d7a981805611dbb86e2e04.jpg","1664dddd77f7cd121c19b843525d3ad1":"/assets/1664dddd77f7cd121c19b843525d3ad1.jpg","37d2992a7e6f33d5900ae1339576903f":"/assets/37d2992a7e6f33d5900ae1339576903f.jpg","ca34e6ebd0ac7f45170f02d678f90c89":"/assets/ca34e6ebd0ac7f45170f02d678f90c89.jpg","c1443d4ff087cdf646405e867517022d":"/assets/c1443d4ff087cdf646405e867517022d.jpg","4c40f10228ecec0b8a4fbdbb13ee72f5":"/assets/4c40f10228ecec0b8a4fbdbb13ee72f5.jpg","28e13cbf1bf9bebb2c915b161f2bb2a2":"/assets/28e13cbf1bf9bebb2c915b161f2bb2a2.jpg","cff425bc1143c78d88f0accf43b2a6ab":"/assets/cff425bc1143c78d88f0accf43b2a6ab.jpg"};</script>
+<script src="/js/runtime.js"></script>
+<script>
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { lang: 'en', done: {}, songDraft: '', song: '', bk: false };
+  }
+  componentDidUpdate() {
+    if (this.state.bk && !this.bkFocused) {
+      this.bkFocused = true;
+      this.prevOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      requestAnimationFrame(() => { const c = document.querySelector('.bk-close'); if (c) c.focus(); });
+    }
+  }
+  componentWillUnmount() { document.body.style.overflow = this.prevOverflow || ''; }
+  openBk(e) {
+    this.trigger = e && e.currentTarget;
+    this.setState({ bk: true });
+  }
+  closeBk() {
+    if (!this.state.bk) return;
+    this.bkFocused = false;
+    document.body.style.overflow = this.prevOverflow || '';
+    this.setState({ bk: false });
+    const t = this.trigger;
+    requestAnimationFrame(() => { if (t && t.focus) t.focus(); });
+  }
+  bkKey(e) {
+    if (e.key === 'Escape') { e.preventDefault(); this.closeBk(); return; }
+    if (e.key !== 'Tab') return;
+    const panel = e.currentTarget.querySelector('.bk-panel');
+    if (!panel) return;
+    const f = Array.from(panel.querySelectorAll('a[href], button:not([disabled]), input, [tabindex]:not([tabindex="-1"])')).filter((el) => el.offsetParent !== null);
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1], a = document.activeElement;
+    if (e.shiftKey && (a === first || !panel.contains(a))) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && (a === last || !panel.contains(a))) { e.preventDefault(); first.focus(); }
+  }
+  copy() {
+    const en = {
+      back: 'Back to the site',
+      eyebrow: 'We can’t wait to celebrate with you', title: 'See you in Vallarta!',
+      sub: 'Here’s everything you need to get ready for the wedding weekend.',
+      progress: 'Your progress', allDone: 'All set. Now just pack your bags.',
+      beforeEyebrow: 'Before you go',
+      mark: 'Mark as done', unmark: 'Mark as not done', markLabel: 'Mark as complete', doneLabel: 'Completed',
+      songLabel: 'Song and artist', songBtn: 'Add my song', songSaved: 'Added to the playlist:', songChange: 'Change',
+      steps: [
+        { title: 'Check your passport',
+          body: 'Traveling from outside Mexico? Make sure your passport is valid for your whole stay.' },
+        { title: 'Book your room', due: 'By Jan 31, 2027',
+          body: 'Reserve in our room block at Hotel Mousai (adults only) or Garza Blanca Sanctuary (kid friendly). Rooms are limited and the group rate ends January 31.',
+          note: 'Joining us requires a minimum three-night stay. Bringing kids? Book Sanctuary.',
+          links: [{ label: 'Book your room', primary: true }] },
+        { title: 'Book your flights',
+          body: 'Fly into Puerto Vallarta International Airport (PVR). Plan to land Friday, May 28 and fly home Monday, May 31 (Memorial Day).' },
+        { title: 'Book your transportation', due: '1 week before arrival',
+          body: 'Transportation between PVR and the resort is provided by Garza Blanca once your room is booked. The drive is about 40 minutes.',
+          note: 'Please book your transportation at least one week before you land, so it\u2019s all set and your arrival is smooth.' }
+      ],
+      packEyebrow: 'What to pack', packTitle: 'Pack for the heat',
+      weather: 'Late May in Puerto Vallarta is typically hot and humid, with highs around 90°F (32°C) and warm evenings.',
+      pack: [
+        { item: 'Passport', why: 'The one thing you can’t buy when you get there.' },
+        { item: 'Wedding attire', why: 'For Saturday. Light, breathable fabrics will thank you.' },
+        { item: 'Welcome party outfit', why: 'Friday evening. Beach semi-formal.' },
+        { item: 'Comfortable shoes', why: 'You\u2019ll be walking resort pathways between venues. Block heels or flats beat stilettos.' },
+        { item: 'Swimsuits & cover-ups', why: 'Between the pools and the beach, bring more than one.' },
+        { item: 'Sunscreen & sunglasses', why: 'The sun is strong, even on cloudy days.' },
+        { item: 'A light layer', why: 'For air-conditioned dinners and breezy nights.' },
+        { item: 'Dancing shoes', why: 'Saturday night goes late.' }
+      ],
+      doEyebrow: 'While you’re here', doTitle: 'Things to do',
+      doSub: 'Sunday is wide open. Here are a few ways to spend it, on or off the resort.',
+      doGroups: [
+        { name: 'At the resort', items: [
+          { name: 'Pools & beach', where: 'Steps away', what: 'Find a lounger, order something cold and do nothing at all.' },
+          { name: 'The spa', where: 'On site', what: 'A massage the morning after the wedding is never a bad idea. Book ahead.' }
+        ] },
+        { name: 'Around Vallarta', items: [
+          { name: 'The Malecón', where: 'About 15 min north', what: 'The seaside boardwalk downtown, lined with sculptures, shops and some of the best sunsets in town.' },
+          { name: 'Zona Romántica', where: 'Old town', what: 'Cobblestone streets, small restaurants, bars and shopping south of the river.' },
+          { name: 'Los Arcos', where: 'In the bay', what: 'Rock arches in a protected marine park. Popular for snorkeling and boat tours.' },
+          { name: 'Sayulita', where: 'Day trip north', what: 'A colorful little surf town with a lively beach and plenty of tacos.' }
+        ] }
+      ],
+      bk: {
+        close: 'Close booking details', closeText: 'Close',
+        label: 'Before you book', title: 'A few things to know',
+        intro: 'We want booking to be easy and clear, with no surprises when you check out. Here’s everything in one place.',
+        datesH: 'Your dates',
+        dates: [
+          { k: 'Check in', v: 'Friday, May 28, 2027 (4:00 PM)' },
+          { k: 'Wedding', v: 'Saturday, May 29, 2027' },
+          { k: 'Check out', v: 'Monday, May 31, 2027 (Memorial Day, 11:00 AM)' },
+          { k: 'Minimum stay', v: '3 nights' },
+          { k: 'Please book by', v: 'January 31, 2027' }
+        ],
+        recTag: 'Our recommendation', aiH: 'We recommend All-Inclusive',
+        ai: [
+          'Your meals, drinks, and room service are covered, so you can enjoy the weekend without paying for every meal or round of drinks.',
+          'Taxes and gratuities are already included.',
+          'Some wedding-weekend perks, like the open bar at our welcome party, are only for All-Inclusive guests.'
+        ],
+        aiSmall: 'Extras like spa treatments, premium liquor, and wine by the bottle aren’t included.',
+        stayH: 'Where to stay',
+        hotels: [
+          { name: 'Hotel Mousai', tag: 'Adults only', kids: false, rooms: [{ n: 'Corner Suite', f: '2 adults' }, { n: 'Ultra Suite', f: '2 adults' }] },
+          { name: 'Garza Blanca Sanctuary', tag: 'Kid friendly', kids: true, rooms: [{ n: 'Junior Suite Queen', f: '2 adults and up to 2 kids' }, { n: 'Junior Suite King', f: '2 adults' }] }
+        ],
+        stayNote: 'Kids ages 4–12 stay and eat free for the whole stay, up to 2 per room. Your exact price will show on the booking page before you pay.',
+        payH: 'How payment works', payAria: 'Payment split: 30% when you book, 70% at check-in',
+        pay30: 'Charged when you book. This deposit is non-refundable.',
+        pay70: 'Charged when you check in.',
+        changeH: 'If plans change',
+        change: [
+          { when: 'Until about March 1, 2027', what: 'If you cancel, you lose your 30% deposit.' },
+          { when: 'From about March 1, 2027 on', what: 'Cancellations, no-shows, and early departures are charged for the full stay.' }
+        ],
+        tip: 'We recommend travel insurance, just in case.',
+        goodH: 'Good to know',
+        good1: 'Please book through our link. It’s the only way to get our group rate and wedding perks.',
+        good2: 'Want to arrive early or stay longer? The group rate may be available for extra nights, depending on availability. Reach out to the resort’s Groups & Weddings team:',
+        good3: 'Questions for us? Text or call Daniela at (913) 334-8800.',
+        footLine: 'You’ll pay 30% today and the rest at check-in.',
+        cta: 'Continue to Booking'
+      },
+      qTitle: 'Questions?', qBody: 'Text or call Daniela anytime at (913) 334-8800. We’re happy to help you plan.'
+    };
+    const es = {
+      back: 'Volver al sitio',
+      eyebrow: 'No vemos la hora de celebrar con ustedes', title: '¡Nos vemos en Vallarta!',
+      sub: 'Aquí está todo lo que necesitan para prepararse para el fin de semana de la boda.',
+      progress: 'Su progreso', allDone: 'Todo listo. Ahora solo falta hacer maletas.',
+      beforeEyebrow: 'Antes de viajar',
+      mark: 'Marcar como hecho', unmark: 'Marcar como pendiente', markLabel: 'Marcar como completado', doneLabel: 'Completado',
+      songLabel: 'Canción y artista', songBtn: 'Agregar mi canción', songSaved: 'Ya está en la playlist:', songChange: 'Cambiar',
+      steps: [
+        { title: 'Revisen su pasaporte',
+          body: '¿Viajan desde fuera de México? Asegúrense de que su pasaporte esté vigente durante toda su estancia.' },
+        { title: 'Reserven su habitación', due: 'Antes del 31 ene 2027',
+          body: 'Reserven en nuestro bloque de habitaciones en Hotel Mousai (solo adultos) o Garza Blanca Sanctuary (ideal para niños). Las habitaciones son limitadas y la tarifa de grupo termina el 31 de enero.',
+          note: 'Para acompañarnos se requiere una estancia mínima de tres noches. ¿Vienen con niños? Reserven en Sanctuary.',
+          links: [{ label: 'Reservar habitación', primary: true }] },
+        { title: 'Reserven sus vuelos',
+          body: 'Vuelen al Aeropuerto Internacional de Puerto Vallarta (PVR). Lo ideal es llegar el viernes 28 de mayo y regresar el lunes 31 de mayo (Memorial Day).' },
+        { title: 'Reserven su transporte', due: '1 semana antes de llegar',
+          body: 'Garza Blanca ofrece el transporte entre PVR y el resort una vez que su habitación esté reservada. El trayecto es de unos 40 minutos.',
+          note: 'Reserven su transporte al menos una semana antes de su llegada, para que todo esté listo y su llegada sea tranquila.' }
+      ],
+      packEyebrow: 'Qué empacar', packTitle: 'Empaquen para el calor',
+      weather: 'A finales de mayo, Puerto Vallarta suele estar caluroso y húmedo, con máximas de alrededor de 32 °C y noches cálidas.',
+      pack: [
+        { item: 'Pasaporte', why: 'Lo único que no pueden comprar al llegar.' },
+        { item: 'Ropa para la boda', why: 'Para el sábado. Las telas ligeras y frescas son su mejor aliado.' },
+        { item: 'Atuendo para la bienvenida', why: 'Viernes por la noche. Semiformal de playa.' },
+        { item: 'Zapatos cómodos', why: 'Caminarán por los senderos del resort entre un espacio y otro. Mejor tacón ancho o flats que tacón de aguja.' },
+        { item: 'Trajes de baño', why: 'Entre las albercas y la playa, traigan más de uno.' },
+        { item: 'Bloqueador y lentes de sol', why: 'El sol es fuerte, aun en días nublados.' },
+        { item: 'Una prenda ligera', why: 'Para cenas con aire acondicionado y noches con brisa.' },
+        { item: 'Zapatos para bailar', why: 'El sábado la fiesta va hasta tarde.' }
+      ],
+      doEyebrow: 'Ya que están aquí', doTitle: 'Qué hacer',
+      doSub: 'El domingo está libre. Aquí hay algunas ideas, dentro o fuera del resort.',
+      doGroups: [
+        { name: 'En el resort', items: [
+          { name: 'Albercas y playa', where: 'A unos pasos', what: 'Busquen un camastro, pidan algo frío y no hagan nada.' },
+          { name: 'El spa', where: 'En el resort', what: 'Un masaje la mañana después de la boda nunca está de más. Reserven con tiempo.' }
+        ] },
+        { name: 'Por Vallarta', items: [
+          { name: 'El Malecón', where: 'Unos 15 min al norte', what: 'El paseo junto al mar en el centro, con esculturas, tiendas y algunos de los mejores atardeceres.' },
+          { name: 'Zona Romántica', where: 'Centro histórico', what: 'Calles empedradas, restaurantes pequeños, bares y tiendas al sur del río.' },
+          { name: 'Los Arcos', where: 'En la bahía', what: 'Arcos de roca en un parque marino protegido. Ideal para esnórquel y paseos en lancha.' },
+          { name: 'Sayulita', where: 'Paseo de un día al norte', what: 'Un pueblito surfero lleno de color, con playa animada y muchos tacos.' }
+        ] }
+      ],
+      bk: {
+        close: 'Cerrar detalles de la reservación', closeText: 'Cerrar',
+        label: 'Antes de reservar', title: 'Algunas cosas que deben saber',
+        intro: 'Queremos que reservar sea fácil y claro, sin sorpresas al salir. Aquí está todo en un solo lugar.',
+        datesH: 'Sus fechas',
+        dates: [
+          { k: 'Llegada', v: 'Viernes 28 de mayo de 2027 (4:00 PM)' },
+          { k: 'Boda', v: 'Sábado 29 de mayo de 2027' },
+          { k: 'Salida', v: 'Lunes 31 de mayo de 2027 (Memorial Day, 11:00 AM)' },
+          { k: 'Estancia mínima', v: '3 noches' },
+          { k: 'Reserven antes del', v: '31 de enero de 2027' }
+        ],
+        recTag: 'Nuestra recomendación', aiH: 'Les recomendamos Todo Incluido',
+        ai: [
+          'Sus comidas, bebidas y servicio a la habitación están cubiertos, así pueden disfrutar el fin de semana sin pagar cada comida o cada ronda.',
+          'Los impuestos y las propinas ya están incluidos.',
+          'Algunos beneficios del fin de semana, como la barra libre en nuestra fiesta de bienvenida, son solo para huéspedes con Todo Incluido.'
+        ],
+        aiSmall: 'Extras como tratamientos de spa, licores premium y vino por botella no están incluidos.',
+        stayH: 'Dónde hospedarse',
+        hotels: [
+          { name: 'Hotel Mousai', tag: 'Solo adultos', kids: false, rooms: [{ n: 'Corner Suite', f: '2 adultos' }, { n: 'Ultra Suite', f: '2 adultos' }] },
+          { name: 'Garza Blanca Sanctuary', tag: 'Ideal para niños', kids: true, rooms: [{ n: 'Junior Suite Queen', f: '2 adultos y hasta 2 niños' }, { n: 'Junior Suite King', f: '2 adultos' }] }
+        ],
+        stayNote: 'Los niños de 4 a 12 años se hospedan y comen gratis durante toda la estancia, hasta 2 por habitación. Verán su precio exacto en la página de reservación antes de pagar.',
+        payH: 'Cómo funciona el pago', payAria: 'Pago dividido: 30% al reservar, 70% al llegar',
+        pay30: 'Se cobra al reservar. Este depósito no es reembolsable.',
+        pay70: 'Se cobra al hacer check-in.',
+        changeH: 'Si cambian sus planes',
+        change: [
+          { when: 'Hasta alrededor del 1 de marzo de 2027', what: 'Si cancelan, pierden su depósito del 30%.' },
+          { when: 'A partir de alrededor del 1 de marzo de 2027', what: 'Las cancelaciones, las no presentaciones y las salidas anticipadas se cobran por la estancia completa.' }
+        ],
+        tip: 'Les recomendamos contratar un seguro de viaje, por si acaso.',
+        goodH: 'Bueno saber',
+        good1: 'Por favor reserven a través de nuestro enlace. Es la única forma de obtener nuestra tarifa de grupo y los beneficios de la boda.',
+        good2: '¿Quieren llegar antes o quedarse más tiempo? La tarifa de grupo podría aplicar para noches extra, según disponibilidad. Contacten al equipo de Grupos y Bodas del resort:',
+        good3: '¿Preguntas para nosotros? Escríbanle o llamen a Daniela al (913) 334-8800.',
+        footLine: 'Hoy pagan el 30% y el resto al hacer check-in.',
+        cta: 'Continuar a la reservación'
+      },
+      qTitle: '¿Preguntas?', qBody: 'Escríbanle o llamen a Daniela cuando quieran al (913) 334-8800. Con gusto les ayudamos a planear.'
+    };
+    return this.state.lang === 'es' ? es : en;
+  }
+  renderVals() {
+    // Replace with the Garza Blanca room block link when you have it.
+    const BOOKING_URL = '#booking-link-coming-soon';
+    const t = this.copy();
+    const done = this.state.done;
+    const isEs = this.state.lang === 'es';
+    const steps = t.steps.map((s, i) => {
+      const d = !!done[i];
+      return {
+        ...s,
+        n: i + 1,
+        done: d, notDone: !d,
+        pressed: String(d),
+        aria: (d ? t.unmark : t.mark) + ': ' + s.title,
+        toggle: () => this.setState({ done: { ...this.state.done, [i]: !this.state.done[i] } }),
+        bg: d ? '#EFE6D6' : '#FFFFFF',
+        checkBg: d ? '#0E3B4A' : 'transparent',
+        checkFg: d ? '#F7F2EA' : '#0E3B4A',
+        strike: d ? 'line-through' : 'none',
+        cbxLabel: d ? t.doneLabel : t.markLabel, cbxFg: d ? '#3B5537' : '#0E3B4A', tickOp: d ? '1' : '0',
+        hasDue: !!s.due, hasNote: !!s.note,
+        isSong: !!s.song && !this.state.song, songSet: !!s.song && !!this.state.song,
+        hasLinks: !!(s.links && s.links.length),
+        links: (s.links || []).map((l) => ({
+          label: l.label,
+          cls: l.primary ? 'btn' : 'btn-ghost',
+          bg: l.primary ? '#0E3B4A' : 'transparent',
+          fg: l.primary ? '#F7F2EA' : '#0E3B4A',
+          open: (e) => this.openBk(e)
+        }))
+      };
+    });
+    const doneCount = steps.filter((s) => s.done).length;
+    const b = {
+      ...t.bk,
+      dates: t.bk.dates.map((d, i, a) => ({ ...d, line: i === a.length - 1 ? 'transparent' : 'rgba(14,59,74,.1)' })),
+      hotels: t.bk.hotels.map((h) => ({ ...h, bg: h.kids ? '#DDE6D5' : '#0E3B4A', fg: h.kids ? '#24432A' : '#F7F2EA' })),
+      change: t.bk.change.map((c, i) => ({ ...c, dot: i === 0 ? '#F7F2EA' : '#0E3B4A' }))
+    };
+    return {
+      t, steps, b,
+      bkOpen: this.state.bk,
+      bookUrl: BOOKING_URL,
+      bkClose: () => this.closeBk(),
+      bkBackdrop: (e) => { if (e.target === e.currentTarget) this.closeBk(); },
+      bkKey: (e) => this.bkKey(e),
+      songDraft: this.state.songDraft, song: this.state.song,
+      onSong: (e) => this.setState({ songDraft: e.target.value }),
+      saveSong: () => {
+        const v = this.state.songDraft.trim();
+        if (!v) return;
+        const i = this.copy().steps.findIndex((x) => x.song);
+        this.setState({ song: v, done: { ...this.state.done, [i]: true } });
+      },
+      editSong: () => this.setState({ song: '', songDraft: this.state.song }),
+      doneCount, total: steps.length,
+      pct: Math.round((doneCount / steps.length) * 100) + '%',
+      allDone: doneCount === steps.length,
+      switchEn: () => this.setState({ lang: 'en' }),
+      switchEs: () => this.setState({ lang: 'es' }),
+      enColor: isEs ? '#7D8E92' : '#0E3B4A', enWeight: isEs ? '400' : '500',
+      esColor: isEs ? '#0E3B4A' : '#7D8E92', esWeight: isEs ? '500' : '400'
+    };
+  }
+}
+
+mountDC(Component, [{"t":"div","a":{"style":"container-type: inline-size; font-family: Jost, sans-serif; color: #1F2E33; background: #F7F2EA"},"c":[{"t":"header","a":{"style":"position: sticky; top: 0; z-index: 10; background: rgba(247,242,234,.94); border-bottom: 1px solid rgba(14,59,74,.12)"},"c":[{"t":"nav","a":{"style":"max-width: 1100px; margin: 0 auto; padding: 16px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px"},"c":[{"t":"a","a":{"href":"/","style":"font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; letter-spacing: 2px; text-decoration: none; color: #0E3B4A"},"c":["R ",{"t":"span","a":{"style":"font-style: italic; color: #4E6B4A"},"c":["&"]}," D"]},{"t":"div","a":{"style":"display: flex; align-items: center; gap: 20px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase"},"c":[{"t":"div","a":{"style":"display: flex; align-items: center; gap: 2px"},"c":[{"t":"button","a":{"class":"lang-sw","onClick":"{{switchEn}}","style":"color: {{enColor}}; font-weight: {{enWeight}}"},"c":["EN"]},{"t":"span","a":{"aria-hidden":"true","style":"color: #9AA9AC"},"c":["·"]},{"t":"button","a":{"class":"lang-sw","onClick":"{{switchEs}}","style":"color: {{esColor}}; font-weight: {{esWeight}}"},"c":["ES"]}]},{"t":"a","a":{"href":"/","class":"navback","style":"text-decoration: none"},"c":["{{t.back}}"]}]}]}]},{"t":"section","a":{"style":"padding: clamp(64px, 12cqi, 104px) 20px clamp(40px, 8cqi, 64px); text-align: center"},"c":[{"t":"div","a":{"style":"max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 18px"},"c":[{"t":"p","a":{"class":"rise d1","style":"margin: 0; font-size: 13px; letter-spacing: 5px; text-transform: uppercase; color: #4E6B4A"},"c":["{{t.eyebrow}}"]},{"t":"h1","a":{"class":"rise d2","style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(48px, 12cqi, 84px); line-height: 1; color: #0E3B4A"},"c":["{{t.title}}"]},{"t":"p","a":{"class":"rise d3","style":"margin: 0; max-width: 520px; font-size: 17px; line-height: 1.7; color: #3E4C50"},"c":["{{t.sub}}"]},{"t":"div","a":{"class":"rise d4","style":"width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: 10px; margin-top: 10px"},"c":[{"t":"div","a":{"style":"display: flex; justify-content: space-between; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #4E6B4A"},"c":[{"t":"span","a":{},"c":["{{t.progress}}"]},{"t":"span","a":{},"c":["{{doneCount}} / {{total}}"]}]},{"t":"div","a":{"style":"height: 6px; border-radius: 999px; background: #E6DCCB; overflow: hidden"},"c":[{"t":"div","a":{"class":"bar","style":"height: 100%; width: {{pct}}; background: #0E3B4A; border-radius: 999px"},"c":[]}]},{"t":"sc-if","a":{"value":"{{allDone}}","hint-placeholder-val":"{{false}}"},"c":[{"t":"p","a":{"style":"margin: 4px 0 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: #3B5537"},"c":["{{t.allDone}}"]}]}]}]}]},{"t":"section","a":{"style":"padding: 0 20px clamp(72px, 12cqi, 112px)"},"c":[{"t":"div","a":{"style":"max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px"},"c":[{"t":"p","a":{"style":"margin: 0 0 8px; text-align: center; font-size: 13px; letter-spacing: 5px; text-transform: uppercase; color: #4E6B4A"},"c":["{{t.beforeEyebrow}}"]},{"t":"sc-for","a":{"list":"{{steps}}","as":"s","hint-placeholder-count":"4"},"c":[{"t":"div","a":{"class":"step lift","style":"background: {{s.bg}}; border: 1px solid rgba(14,59,74,.14); border-radius: 14px; padding: clamp(20px, 5cqi, 32px); display: flex; gap: clamp(14px, 4cqi, 24px); align-items: flex-start"},"c":[{"t":"button","a":{"type":"button","class":"check","onClick":"{{s.toggle}}","aria-pressed":"{{s.pressed}}","aria-label":"{{s.aria}}","style":"flex: 0 0 auto; width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid #0E3B4A; background: {{s.checkBg}}; color: {{s.checkFg}}; font-family: Jost, sans-serif; font-size: 15px; font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0"},"c":[{"t":"sc-if","a":{"value":"{{s.done}}","hint-placeholder-val":"{{false}}"},"c":[{"t":"svg","a":{"aria-hidden":"true","width":"20","height":"20","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2.2","stroke-linecap":"round","stroke-linejoin":"round"},"c":[{"t":"path","a":{"d":"M5 12.5l4.5 4.5L19 7.5"},"c":[]}]}]},{"t":"sc-if","a":{"value":"{{s.notDone}}","hint-placeholder-val":"{{true}}"},"c":[{"t":"span","a":{},"c":["{{s.n}}"]}]}]},{"t":"div","a":{"style":"flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 10px"},"c":[{"t":"div","a":{"style":"display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px"},"c":[{"t":"h2","a":{"style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(26px, 6cqi, 32px); line-height: 1.1; color: #0E3B4A; text-decoration: {{s.strike}}"},"c":["{{s.title}}"]},{"t":"sc-if","a":{"value":"{{s.hasDue}}","hint-placeholder-val":"{{false}}"},"c":[{"t":"p","a":{"style":"margin: 0; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #F7F2EA; background: #0E3B4A; padding: 6px 12px; border-radius: 999px"},"c":["{{s.due}}"]}]}]},{"t":"p","a":{"style":"margin: 0; font-size: 16px; line-height: 1.7; color: #3E4C50"},"c":["{{s.body}}"]},{"t":"sc-if","a":{"value":"{{s.hasNote}}","hint-placeholder-val":"{{false}}"},"c":[{"t":"p","a":{"style":"margin: 2px 0 0; background: #EFE6D6; color: #0E3B4A; border-radius: 10px; padding: 12px 16px; font-size: 14px; font-weight: 500; line-height: 1.6"},"c":["{{s.note}}"]}]},{"t":"sc-if","a":{"value":"{{s.isSong}}","hint-placeholder-val":"{{false}}"},"c":[{"t":"div","a":{"style":"display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; margin-top: 4px"},"c":[{"t":"label","a":{"style":"flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #4E6B4A"},"c":["{{t.songLabel}}",{"t":"input","a":{"type":"text","value":"{{songDraft}}","onChange":"{{onSong}}","style":"background: transparent; border: 0; border-bottom: 1px solid #9AA9AC; padding: 10px 0; font-family: Jost, sans-serif; font-size: 17px; color: #0E3B4A; letter-spacing: 0; text-transform: none"},"c":[]}]},{"t":"button","a":{"type":"button","class":"btn","onClick":"{{saveSong}}","style":"padding: 13px 22px; border-radius: 999px; border: 1px solid #0E3B4A; background: #0E3B4A; color: #F7F2EA; font-family: Jost, sans-serif; font-size: 12px; letter-spacing: 2.5px; text-transform: uppercase; cursor: pointer"},"c":["{{t.songBtn}}"]}]}]},{"t":"sc-if","a":{"value":"{{s.songSet}}","hint-placeholder-val":"{{false}}"},"c":[{"t":"div","a":{"style":"display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 2px; background: #F7F2EA; border-radius: 10px; padding: 12px 16px"},"c":[{"t":"svg","a":{"aria-hidden":"true","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"#2F6F84","stroke-width":"1.6","stroke-linecap":"round","stroke-linejoin":"round"},"c":[{"t":"path","a":{"d":"M9 18V5l12-2v13"},"c":[]},{"t":"circle","a":{"cx":"6","cy":"18","r":"3"},"c":[]},{"t":"circle","a":{"cx":"18","cy":"16","r":"3"},"c":[]}]},{"t":"span","a":{"style":"font-size: 15px; color: #0E3B4A"},"c":["{{t.songSaved}} ",{"t":"strong","a":{"style":"font-weight: 500"},"c":["{{song}}"]}]},{"t":"button","a":{"type":"button","class":"lang-sw","onClick":"{{editSong}}","style":"color: #2F6F84; text-decoration: underline; letter-spacing: 1px"},"c":["{{t.songChange}}"]}]}]},{"t":"sc-if","a":{"value":"{{s.hasLinks}}","hint-placeholder-val":"{{false}}"},"c":[{"t":"div","a":{"style":"display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px"},"c":[{"t":"sc-for","a":{"list":"{{s.links}}","as":"l","hint-placeholder-count":"1"},"c":[{"t":"button","a":{"type":"button","class":"{{l.cls}}","onClick":"{{l.open}}","aria-haspopup":"dialog","style":"padding: 13px 22px; border-radius: 999px; border: 1px solid #0E3B4A; background: {{l.bg}}; color: {{l.fg}}; font-family: Jost, sans-serif; font-size: 12px; letter-spacing: 2.5px; text-transform: uppercase; cursor: pointer"},"c":["{{l.label}}"]}]}]}]},{"t":"button","a":{"type":"button","class":"cbx","role":"checkbox","aria-checked":"{{s.pressed}}","onClick":"{{s.toggle}}","style":"align-self: flex-start; margin-top: 6px; display: inline-flex; align-items: center; gap: 12px; background: none; border: 0; padding: 6px 0; cursor: pointer; font-family: Jost, sans-serif; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: {{s.cbxFg}}"},"c":[{"t":"span","a":{"aria-hidden":"true","class":"cbx-box","style":"width: 24px; height: 24px; box-sizing: border-box; border-radius: 6px; border: 1.5px solid #0E3B4A; background: {{s.checkBg}}; color: #F7F2EA; display: flex; align-items: center; justify-content: center"},"c":[{"t":"svg","a":{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"2.6","stroke-linecap":"round","stroke-linejoin":"round","style":"opacity: {{s.tickOp}}"},"c":[{"t":"path","a":{"d":"M5 12.5l4.5 4.5L19 7.5"},"c":[]}]}]},{"t":"span","a":{},"c":["{{s.cbxLabel}}"]}]}]}]}]}]}]},{"t":"section","a":{"style":"padding: clamp(72px, 12cqi, 112px) 20px; background: #EFE6D6"},"c":[{"t":"div","a":{"style":"max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px"},"c":[{"t":"div","a":{"style":"text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px"},"c":[{"t":"p","a":{"style":"margin: 0; font-size: 13px; letter-spacing: 5px; text-transform: uppercase; color: #4E6B4A"},"c":["{{t.packEyebrow}}"]},{"t":"h2","a":{"style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(40px, 10cqi, 56px); color: #0E3B4A"},"c":["{{t.packTitle}}"]},{"t":"p","a":{"style":"margin: 0; max-width: 600px; font-size: 17px; line-height: 1.7; color: #3E4C50"},"c":["{{t.weather}}"]}]},{"t":"ul","a":{"style":"margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px"},"c":[{"t":"sc-for","a":{"list":"{{t.pack}}","as":"p","hint-placeholder-count":"8"},"c":[{"t":"li","a":{"class":"lift","style":"background: #F7F2EA; border-radius: 12px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px"},"c":[{"t":"span","a":{"style":"font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1.2; color: #0E3B4A"},"c":["{{p.item}}"]},{"t":"span","a":{"style":"font-size: 14px; line-height: 1.55; color: #3E4C50"},"c":["{{p.why}}"]}]}]}]}]}]},{"t":"section","a":{"style":"padding: clamp(72px, 12cqi, 112px) 20px"},"c":[{"t":"div","a":{"style":"max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px"},"c":[{"t":"div","a":{"style":"text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px"},"c":[{"t":"p","a":{"style":"margin: 0; font-size: 13px; letter-spacing: 5px; text-transform: uppercase; color: #4E6B4A"},"c":["{{t.doEyebrow}}"]},{"t":"h2","a":{"style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(40px, 10cqi, 56px); color: #0E3B4A"},"c":["{{t.doTitle}}"]},{"t":"p","a":{"style":"margin: 0; max-width: 600px; font-size: 17px; line-height: 1.7; color: #3E4C50"},"c":["{{t.doSub}}"]}]},{"t":"div","a":{"style":"display: flex; flex-wrap: wrap; gap: 28px"},"c":[{"t":"sc-for","a":{"list":"{{t.doGroups}}","as":"g","hint-placeholder-count":"2"},"c":[{"t":"div","a":{"style":"flex: 1 1 380px; display: flex; flex-direction: column; gap: 14px"},"c":[{"t":"h3","a":{"style":"margin: 0; padding-bottom: 12px; border-bottom: 1px solid rgba(14,59,74,.18); font-size: 13px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: #2F6F84"},"c":["{{g.name}}"]},{"t":"sc-for","a":{"list":"{{g.items}}","as":"d","hint-placeholder-count":"4"},"c":[{"t":"div","a":{"style":"display: flex; flex-direction: column; gap: 4px; padding: 6px 0 14px; border-bottom: 1px solid rgba(14,59,74,.08)"},"c":[{"t":"div","a":{"style":"display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px"},"c":[{"t":"span","a":{"style":"font-family: 'Cormorant Garamond', serif; font-size: 26px; line-height: 1.15; color: #0E3B4A"},"c":["{{d.name}}"]},{"t":"span","a":{"style":"font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #4E6B4A"},"c":["{{d.where}}"]}]},{"t":"span","a":{"style":"font-size: 15px; line-height: 1.65; color: #3E4C50"},"c":["{{d.what}}"]}]}]}]}]}]}]}]},{"t":"section","a":{"style":"padding: clamp(64px, 10cqi, 96px) 20px; background: #0E3B4A; color: #F7F2EA; text-align: center"},"c":[{"t":"div","a":{"style":"max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 16px"},"c":[{"t":"h2","a":{"style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(36px, 9cqi, 48px)"},"c":["{{t.qTitle}}"]},{"t":"p","a":{"style":"margin: 0; font-size: 16px; line-height: 1.7; color: #BFD3D6"},"c":["{{t.qBody}}"]},{"t":"a","a":{"href":"/","class":"btn-ghost","style":"margin-top: 10px; text-decoration: none; color: #F7F2EA; border: 1px solid #F7F2EA; padding: 16px 40px; border-radius: 999px; font-size: 13px; letter-spacing: 3px; text-transform: uppercase"},"c":["{{t.back}}"]}]}]},{"t":"footer","a":{"style":"padding: 56px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px"},"c":[{"t":"p","a":{"style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 40px; color: #0E3B4A"},"c":["R ",{"t":"span","a":{"style":"font-style: italic; color: #4E6B4A"},"c":["&"]}," D"]},{"t":"p","a":{"style":"margin: 0; font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: #4E6B4A"},"c":["05 · 29 · 2027 · Puerto Vallarta"]}]}]},{"t":"sc-if","a":{"value":"{{bkOpen}}","hint-placeholder-val":"{{false}}"},"c":[{"t":"div","a":{"class":"bk-overlay","onClick":"{{bkBackdrop}}","onKeyDown":"{{bkKey}}"},"c":[{"t":"div","a":{"class":"bk-panel","role":"dialog","aria-modal":"true","aria-labelledby":"bk-title"},"c":[{"t":"button","a":{"type":"button","class":"bk-close","onClick":"{{bkClose}}","aria-label":"{{b.close}}"},"c":[{"t":"svg","a":{"aria-hidden":"true","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":"1.7","stroke-linecap":"round"},"c":[{"t":"path","a":{"d":"M6 6l12 12M18 6L6 18"},"c":[]}]}]},{"t":"div","a":{"class":"bk-body"},"c":[{"t":"div","a":{"style":"display: flex; flex-direction: column; gap: 12px; padding-right: 36px"},"c":[{"t":"p","a":{"style":"margin: 0; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: #4E6B4A"},"c":["{{b.label}}"]},{"t":"h2","a":{"id":"bk-title","style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(36px, 7vw, 44px); line-height: 1.05; color: #0E3B4A"},"c":["{{b.title}}"]},{"t":"p","a":{"class":"bk-p","style":"font-size: 16px"},"c":["{{b.intro}}"]}]},{"t":"section","a":{"style":"display: flex; flex-direction: column; gap: 14px"},"c":[{"t":"h3","a":{"class":"bk-h"},"c":["{{b.datesH}}"]},{"t":"dl","a":{"style":"margin: 0; background: #FFFFFF; border: 1px solid rgba(14,59,74,.12); border-radius: 14px; padding: 6px 20px"},"c":[{"t":"sc-for","a":{"list":"{{b.dates}}","as":"d","hint-placeholder-count":"5"},"c":[{"t":"div","a":{"class":"bk-row","style":"display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px; padding: 12px 0; border-bottom: 1px solid {{d.line}}"},"c":[{"t":"dt","a":{"style":"font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #4E6B4A; padding-top: 3px"},"c":["{{d.k}}"]},{"t":"dd","a":{"class":"bk-dd","style":"margin: 0; font-size: 15px; color: #0E3B4A"},"c":["{{d.v}}"]}]}]}]}]},{"t":"section","a":{"style":"background: #0E3B4A; color: #F7F2EA; border-radius: 16px; padding: 26px 24px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 14px 30px rgba(14,59,74,.22)"},"c":[{"t":"p","a":{"style":"margin: 0; align-self: flex-start; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; background: #DDE6D5; color: #0E3B4A; padding: 6px 12px; border-radius: 999px"},"c":["{{b.recTag}}"]},{"t":"h3","a":{"class":"bk-h","style":"color: #F7F2EA; font-size: 30px"},"c":["{{b.aiH}}"]},{"t":"ul","a":{"style":"margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"},"c":[{"t":"sc-for","a":{"list":"{{b.ai}}","as":"x","hint-placeholder-count":"3"},"c":[{"t":"li","a":{"style":"display: flex; gap: 12px; font-size: 15px; line-height: 1.65; color: #E4ECEC"},"c":[{"t":"svg","a":{"aria-hidden":"true","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"#DDE6D5","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","style":"flex: 0 0 auto; margin-top: 4px"},"c":[{"t":"path","a":{"d":"M5 12.5l4.5 4.5L19 7.5"},"c":[]}]},{"t":"span","a":{},"c":["{{x}}"]}]}]}]},{"t":"p","a":{"style":"margin: 2px 0 0; padding-top: 12px; border-top: 1px solid rgba(247,242,234,.18); font-size: 13px; line-height: 1.6; color: #A9C0C4"},"c":["{{b.aiSmall}}"]}]},{"t":"section","a":{"style":"display: flex; flex-direction: column; gap: 14px"},"c":[{"t":"h3","a":{"class":"bk-h"},"c":["{{b.stayH}}"]},{"t":"div","a":{"style":"display: flex; flex-wrap: wrap; gap: 12px"},"c":[{"t":"sc-for","a":{"list":"{{b.hotels}}","as":"h","hint-placeholder-count":"2"},"c":[{"t":"div","a":{"style":"flex: 1 1 230px; background: #FFFFFF; border: 1px solid rgba(14,59,74,.12); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 10px"},"c":[{"t":"p","a":{"style":"margin: 0; align-self: flex-start; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: {{h.fg}}; background: {{h.bg}}; padding: 5px 10px; border-radius: 999px"},"c":["{{h.tag}}"]},{"t":"p","a":{"style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 24px; line-height: 1.1; color: #0E3B4A"},"c":["{{h.name}}"]},{"t":"ul","a":{"style":"margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px"},"c":[{"t":"sc-for","a":{"list":"{{h.rooms}}","as":"r","hint-placeholder-count":"2"},"c":[{"t":"li","a":{"style":"font-size: 14px; line-height: 1.55; color: #3E4C50"},"c":[{"t":"strong","a":{"style":"font-weight: 500; color: #0E3B4A"},"c":["{{r.n}}"]}," · {{r.f}}"]}]}]}]}]}]},{"t":"p","a":{"class":"bk-p","style":"font-size: 14px"},"c":["{{b.stayNote}}"]}]},{"t":"section","a":{"style":"display: flex; flex-direction: column; gap: 14px"},"c":[{"t":"h3","a":{"class":"bk-h"},"c":["{{b.payH}}"]},{"t":"div","a":{"role":"img","aria-label":"{{b.payAria}}","style":"display: flex; height: 14px; border-radius: 999px; overflow: hidden; background: #E6DCCB"},"c":[{"t":"div","a":{"style":"width: 30%; background: #0E3B4A"},"c":[]},{"t":"div","a":{"style":"width: 70%; background: #C9B99C"},"c":[]}]},{"t":"div","a":{"style":"display: flex; gap: 12px"},"c":[{"t":"div","a":{"style":"flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 4px"},"c":[{"t":"p","a":{"style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 30px; line-height: 1; color: #0E3B4A"},"c":["30%"]},{"t":"p","a":{"style":"margin: 0; font-size: 14px; line-height: 1.55; color: #3E4C50"},"c":["{{b.pay30}}"]}]},{"t":"div","a":{"style":"flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 4px"},"c":[{"t":"p","a":{"style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 30px; line-height: 1; color: #7A6A4F"},"c":["70%"]},{"t":"p","a":{"style":"margin: 0; font-size: 14px; line-height: 1.55; color: #3E4C50"},"c":["{{b.pay70}}"]}]}]}]},{"t":"section","a":{"style":"display: flex; flex-direction: column; gap: 16px"},"c":[{"t":"h3","a":{"class":"bk-h"},"c":["{{b.changeH}}"]},{"t":"ol","a":{"style":"margin: 0; padding: 0; list-style: none; position: relative; display: flex; flex-direction: column; gap: 18px"},"c":[{"t":"li","a":{"aria-hidden":"true","style":"position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: rgba(14,59,74,.18)"},"c":[]},{"t":"sc-for","a":{"list":"{{b.change}}","as":"c","hint-placeholder-count":"2"},"c":[{"t":"li","a":{"style":"position: relative; padding-left: 32px; display: flex; flex-direction: column; gap: 4px"},"c":[{"t":"span","a":{"aria-hidden":"true","style":"position: absolute; left: 0; top: 3px; width: 16px; height: 16px; border-radius: 50%; box-sizing: border-box; border: 2px solid #0E3B4A; background: {{c.dot}}"},"c":[]},{"t":"span","a":{"style":"font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #4E6B4A"},"c":["{{c.when}}"]},{"t":"span","a":{"style":"font-size: 15px; line-height: 1.65; color: #3E4C50"},"c":["{{c.what}}"]}]}]}]},{"t":"p","a":{"style":"margin: 0; background: #DDE6D5; border-radius: 12px; padding: 14px 18px; font-size: 14px; line-height: 1.6; color: #24432A"},"c":["{{b.tip}}"]}]},{"t":"section","a":{"style":"display: flex; flex-direction: column; gap: 14px"},"c":[{"t":"h3","a":{"class":"bk-h"},"c":["{{b.goodH}}"]},{"t":"ul","a":{"style":"margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px"},"c":[{"t":"li","a":{"style":"display: flex; gap: 12px; font-size: 15px; line-height: 1.65; color: #3E4C50"},"c":[{"t":"span","a":{"aria-hidden":"true","style":"flex: 0 0 auto; width: 6px; height: 6px; margin-top: 10px; border-radius: 50%; background: #4E6B4A"},"c":[]},{"t":"span","a":{},"c":["{{b.good1}}"]}]},{"t":"li","a":{"style":"display: flex; gap: 12px; font-size: 15px; line-height: 1.65; color: #3E4C50"},"c":[{"t":"span","a":{"aria-hidden":"true","style":"flex: 0 0 auto; width: 6px; height: 6px; margin-top: 10px; border-radius: 50%; background: #4E6B4A"},"c":[]},{"t":"span","a":{},"c":["{{b.good2}} ",{"t":"span","a":{"style":"display: block; margin-top: 6px; color: #0E3B4A"},"c":["Juan Pablo Chávez Joya",{"t":"br","a":{},"c":[]},{"t":"a","a":{"href":"tel:+523221760700,5771"},"c":["+52 (322) 176 0700 ext. 5771"]},{"t":"br","a":{},"c":[]},{"t":"a","a":{"href":"mailto:juan.chavez@taferresorts.com"},"c":["juan.chavez@taferresorts.com"]}]}]}]},{"t":"li","a":{"style":"display: flex; gap: 12px; font-size: 15px; line-height: 1.65; color: #3E4C50"},"c":[{"t":"span","a":{"aria-hidden":"true","style":"flex: 0 0 auto; width: 6px; height: 6px; margin-top: 10px; border-radius: 50%; background: #4E6B4A"},"c":[]},{"t":"span","a":{},"c":["{{b.good3}}"]}]}]}]}]},{"t":"div","a":{"class":"bk-foot"},"c":[{"t":"p","a":{"style":"margin: 0; font-size: 13px; line-height: 1.5; color: #4E6B4A"},"c":["{{b.footLine}}"]},{"t":"div","a":{"style":"display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px"},"c":[{"t":"a","a":{"href":"{{bookUrl}}","target":"_blank","rel":"noopener noreferrer","class":"btn","style":"flex: 1 1 auto; text-align: center; text-decoration: none; padding: 16px 28px; border-radius: 999px; background: #0E3B4A; color: #F7F2EA; font-size: 13px; letter-spacing: 3px; text-transform: uppercase"},"c":["{{b.cta}}"]},{"t":"button","a":{"type":"button","class":"bk-link","onClick":"{{bkClose}}"},"c":["{{b.closeText}}"]}]}]}]}]}]}], document.getElementById('app'));
+</script>
+</body>
+</html>
