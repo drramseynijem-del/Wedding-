@@ -74,8 +74,9 @@ input,select,textarea{font-family:Jost,sans-serif}
 @media (prefers-reduced-motion:reduce){.mq-a,.mq-b,.mq-c{animation:none}}
 .cf{position:relative;opacity:0;transform:translateY(48px);transition:opacity 1s ease,transform 1.2s cubic-bezier(.16,.84,.3,1)}
 .cf.in{opacity:1;transform:none}
-.cf-stage{position:relative;height:clamp(380px,46cqi,560px);touch-action:pan-y;user-select:none;-webkit-user-select:none}
-.cf-card{position:absolute;left:50%;top:50%;width:clamp(230px,30cqi,400px);aspect-ratio:3/4;padding:0;border:0;margin:0;background:transparent;cursor:pointer;transition:transform .75s cubic-bezier(.2,.75,.2,1),opacity .6s ease,filter .6s ease;-webkit-tap-highlight-color:transparent}
+.cf{--cw:clamp(230px,30cqi,400px)}
+.cf-stage{position:relative;height:calc(var(--cw) * 4 / 3 + 40px);touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.cf-card{position:absolute;left:50%;top:50%;width:var(--cw);aspect-ratio:3/4;padding:0;border:0;margin:0;background:transparent;cursor:pointer;transition:transform .75s cubic-bezier(.2,.75,.2,1),opacity .6s ease,filter .6s ease;-webkit-tap-highlight-color:transparent}
 .cf-card.mid{cursor:zoom-in}
 .cf-pop{width:100%;height:100%;border-radius:10px;overflow:hidden;background:#E6DCCB;box-shadow:0 24px 50px rgba(14,59,74,.22);opacity:0;transform:scale(.55);transition:opacity .9s ease,transform 1.1s cubic-bezier(.2,.9,.25,1.15)}
 .cf.in .cf-pop{opacity:1;transform:none}
@@ -88,7 +89,7 @@ input,select,textarea{font-family:Jost,sans-serif}
 @keyframes nudgeL{0%,100%{transform:translateX(0);opacity:.45}50%{transform:translateX(-7px);opacity:1}}
 @keyframes nudgeR{0%,100%{transform:translateX(0);opacity:.45}50%{transform:translateX(7px);opacity:1}}
 .cf-nl{animation:nudgeL 1.6s ease-in-out infinite}.cf-nr{animation:nudgeR 1.6s ease-in-out infinite}
-@container (max-width:760px){.cf-stage{height:clamp(360px,108cqi,470px)}.cf-card{width:62cqi}.cf-arrows{display:none !important}.cf-swipe{display:flex}}
+@container (max-width:760px){.cf{--cw:min(62cqi,340px)}.cf-arrows{display:none !important}.cf-swipe{display:flex}}
 @media (prefers-reduced-motion:reduce){.cf,.cf-pop,.cf-card{transition:none}.cf-nl,.cf-nr{animation:none}}
 input[type=number]{-moz-appearance:textfield;appearance:textfield}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
 .bye-card{position:relative;width:min(460px,100%);background:#F7F2EA;border-radius:22px;box-shadow:0 30px 80px rgba(9,32,40,.4);padding:56px 28px 40px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;animation:dmPop .45s cubic-bezier(.2,.75,.25,1) both}
