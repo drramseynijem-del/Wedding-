@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honeymoon · Ramsey &amp; Daniela</title>
+<meta name="description" content="Ramsey &amp; Daniela are getting married. May 29, 2027 · Garza Blanca, Puerto Vallarta.">
+<meta property="og:title" content="Ramsey &amp; Daniela · May 29, 2027">
+<meta property="og:description" content="Join us in Puerto Vallarta for our wedding weekend.">
+<meta property="og:image" content="https://daniandramsey.com/assets/2d86380bdfae46ef6763d0c4af0d2133.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E3B4A'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='26' fill='%23F7F2EA'%3ER%26D%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0E3B4A}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.rise{opacity:0;animation:rise 1.1s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.2s}.d2{animation-delay:.45s}.d3{animation-delay:.7s}.d4{animation-delay:1s}.d5{animation-delay:1.25s}
+.lang-sw{background:none;border:0;padding:6px 4px;font-family:Jost,sans-serif;font-size:12px;letter-spacing:2px;cursor:pointer}
+.hm-btn{transition:background .3s ease,color .3s ease,transform .3s ease}
+.hm-btn:hover{background:#F7F2EA;color:#0E3B4A;transform:translateY(-2px)}
+.hm-btn:focus-visible{outline:2px solid #F7F2EA;outline-offset:4px}
+@container (max-width:640px){.navback{display:none}}
+@media (prefers-reduced-motion:reduce){.hm-video{display:none}.hm-hero{background:#0E3B4A url(/_blob/83246ea8c39358e1aa6515e266ea871b) center/cover}.rise{animation:none;opacity:1}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script src="/js/preact.min.js"></script>
+<script>window.__ASSETS = {"ab693557d96786502fbcc4ea758d55a0":"/assets/ab693557d96786502fbcc4ea758d55a0.jpg","a4b6a89d4c1d5288295799bb47fa12bf":"/assets/a4b6a89d4c1d5288295799bb47fa12bf.jpg","83246ea8c39358e1aa6515e266ea871b":"/assets/83246ea8c39358e1aa6515e266ea871b.jpg","1dd5e438108353b0132642dd8456106c":"/assets/1dd5e438108353b0132642dd8456106c.jpg","bea6038ab1e67938da1f3ba88eeb4b70":"/assets/bea6038ab1e67938da1f3ba88eeb4b70.mp4","6cf683c7713db8250ad46ca3c2c030d3":"/assets/6cf683c7713db8250ad46ca3c2c030d3.jpg","f8117b38b8c33f1aa09337f292a25049":"/assets/f8117b38b8c33f1aa09337f292a25049.jpg","825919e321d958735366855f2335caa8":"/assets/825919e321d958735366855f2335caa8.jpg","46caac39e9fd25d814f842db36e60e63":"/assets/46caac39e9fd25d814f842db36e60e63.jpg","665388485d423a7066844a567f4ad402":"/assets/665388485d423a7066844a567f4ad402.jpg","f6727ffe0de448f1aef11256dc8e3442":"/assets/f6727ffe0de448f1aef11256dc8e3442.jpg","e1e09995d62629cc33865b43f3f080f7":"/assets/e1e09995d62629cc33865b43f3f080f7.jpg","5d23dd5417fc12f114c2f4a8e9b1e5dd":"/assets/5d23dd5417fc12f114c2f4a8e9b1e5dd.jpg","b2ee5a2ee0d7ef3ba15b2d54a25c2704":"/assets/b2ee5a2ee0d7ef3ba15b2d54a25c2704.jpg","2c33f2e223f218d4b08e3d3448a75c76":"/assets/2c33f2e223f218d4b08e3d3448a75c76.jpg","1ce19f0b925c9201c14b79be7a48cf30":"/assets/1ce19f0b925c9201c14b79be7a48cf30.jpg","488378bfe52f60b3826ee1cfbd61ae26":"/assets/488378bfe52f60b3826ee1cfbd61ae26.jpg","c0563f02d6a4d2703cdab14a917738a5":"/assets/c0563f02d6a4d2703cdab14a917738a5.jpg","3c00b3fa507a5ef5c737af1deb73203e":"/assets/3c00b3fa507a5ef5c737af1deb73203e.jpg","747dbd3c5ad1c21305a9a654a176d7c3":"/assets/747dbd3c5ad1c21305a9a654a176d7c3.jpg","6f85a28a7c5713426a99a271ab5f24ef":"/assets/6f85a28a7c5713426a99a271ab5f24ef.jpg","c485c995729f2f1e86b4b6b7fbd0be9e":"/assets/c485c995729f2f1e86b4b6b7fbd0be9e.jpg","f06891fc1b560cc1ace91fb3a82a02e8":"/assets/f06891fc1b560cc1ace91fb3a82a02e8.jpg","fa9940c1ce8632ceb7919f25992916a5":"/assets/fa9940c1ce8632ceb7919f25992916a5.jpg","08f5883ccb479166a36b002b408b9a0f":"/assets/08f5883ccb479166a36b002b408b9a0f.jpg","728e54be20837977b201f90f0e6261d8":"/assets/728e54be20837977b201f90f0e6261d8.jpg","bb34d2d1da676c1be787bb7a754c591f":"/assets/bb34d2d1da676c1be787bb7a754c591f.jpg","32a48e9df7635941875f925cb5909814":"/assets/32a48e9df7635941875f925cb5909814.jpg","2a91cf780ffbf2cddf27b8705560fac3":"/assets/2a91cf780ffbf2cddf27b8705560fac3.mp4","be466e279c59a4bb011e6423ef99f54f":"/assets/be466e279c59a4bb011e6423ef99f54f.jpg","2d86380bdfae46ef6763d0c4af0d2133":"/assets/2d86380bdfae46ef6763d0c4af0d2133.jpg","dcbf16fdee1c892d880508d334b867e7":"/assets/dcbf16fdee1c892d880508d334b867e7.jpg","b4ad83b1b60043f535b6d8545cdc78d4":"/assets/b4ad83b1b60043f535b6d8545cdc78d4.jpg","c4fa804a50cb034e1e5c66958b8c10e0":"/assets/c4fa804a50cb034e1e5c66958b8c10e0.jpg","62b0151ea113b1241f1273bb8a5e5ffa":"/assets/62b0151ea113b1241f1273bb8a5e5ffa.jpg","cf65ecccc72ab5ee3e5b8a1a3a33331c":"/assets/cf65ecccc72ab5ee3e5b8a1a3a33331c.jpg","4609e58ff4288683b2beb4878ce9f796":"/assets/4609e58ff4288683b2beb4878ce9f796.jpg","61254dd5e925aaac9a0bee929408c4fb":"/assets/61254dd5e925aaac9a0bee929408c4fb.jpg","c55f48d3b67dd28c185de8decc65735c":"/assets/c55f48d3b67dd28c185de8decc65735c.mp4","4fe4dfc8baa7fb59101d7ebed5ad564a":"/assets/4fe4dfc8baa7fb59101d7ebed5ad564a.jpg","33d554b6e44aa3076bb8d15941a4654a":"/assets/33d554b6e44aa3076bb8d15941a4654a.jpg","cf6b2cbbeb39d90534990d6365ae0f8c":"/assets/cf6b2cbbeb39d90534990d6365ae0f8c.jpg","7ca12a4d466021bb2b06976a1352b77c":"/assets/7ca12a4d466021bb2b06976a1352b77c.jpg","9f316be48450a50adb8e7a8f273d95c8":"/assets/9f316be48450a50adb8e7a8f273d95c8.jpg","9bc2195b139ba5bd1b5829a8838cbdbc":"/assets/9bc2195b139ba5bd1b5829a8838cbdbc.jpg","da1e892c89771e2b9589bfc60459ef6b":"/assets/da1e892c89771e2b9589bfc60459ef6b.jpg","e4559aa16b015cee7f99796d7ff9fdd1":"/assets/e4559aa16b015cee7f99796d7ff9fdd1.jpg","c9952f650fc63ad86aae011f79634bbc":"/assets/c9952f650fc63ad86aae011f79634bbc.jpg","5ebe92d277389ca23d6926ab2eb55cda":"/assets/5ebe92d277389ca23d6926ab2eb55cda.jpg","521a97e3e623d0c0188963ec6b07ecd1":"/assets/521a97e3e623d0c0188963ec6b07ecd1.jpg","ca871a340762617f3a2fb240e755d51f":"/assets/ca871a340762617f3a2fb240e755d51f.jpg","5d8a637f1ef95cf621eee072f958dbac":"/assets/5d8a637f1ef95cf621eee072f958dbac.jpg","8fa852207df7bdef410ac93ca2d1580c":"/assets/8fa852207df7bdef410ac93ca2d1580c.jpg","d6efe37d71e2faeccb53cd1178814e0c":"/assets/d6efe37d71e2faeccb53cd1178814e0c.jpg","02597e4aa1651ee3f5d0425c3068f330":"/assets/02597e4aa1651ee3f5d0425c3068f330.jpg","510d272888e092d5d7db4ae3f62d4c43":"/assets/510d272888e092d5d7db4ae3f62d4c43.jpg","dc667e1340d7a981805611dbb86e2e04":"/assets/dc667e1340d7a981805611dbb86e2e04.jpg","1664dddd77f7cd121c19b843525d3ad1":"/assets/1664dddd77f7cd121c19b843525d3ad1.jpg","37d2992a7e6f33d5900ae1339576903f":"/assets/37d2992a7e6f33d5900ae1339576903f.jpg","ca34e6ebd0ac7f45170f02d678f90c89":"/assets/ca34e6ebd0ac7f45170f02d678f90c89.jpg","c1443d4ff087cdf646405e867517022d":"/assets/c1443d4ff087cdf646405e867517022d.jpg","4c40f10228ecec0b8a4fbdbb13ee72f5":"/assets/4c40f10228ecec0b8a4fbdbb13ee72f5.jpg","28e13cbf1bf9bebb2c915b161f2bb2a2":"/assets/28e13cbf1bf9bebb2c915b161f2bb2a2.jpg","cff425bc1143c78d88f0accf43b2a6ab":"/assets/cff425bc1143c78d88f0accf43b2a6ab.jpg"};</script>
+<script src="/js/runtime.js"></script>
+<script>
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { lang: 'en' };
+    try {
+      const saved = JSON.parse(localStorage.getItem('rd-wedding-steps') || '{}');
+      if (saved.lang === 'es' || saved.lang === 'en') this.state.lang = saved.lang;
+    } catch (err) {}
+    try {
+      const q = new URLSearchParams(location.search).get('lang');
+      if (q === 'es' || q === 'en') this.state.lang = q;
+    } catch (err) {}
+  }
+  componentDidMount() {
+    document.querySelectorAll('video.hm-video').forEach((v) => {
+      v.muted = true; v.playsInline = true;
+      const pl = v.play(); if (pl && pl.catch) pl.catch(() => {});
+    });
+  }
+  copy() {
+    const en = {
+      back: 'Back to the site',
+      eyebrow: 'The honeymoon',
+      title: 'Wherever the map lands',
+      sub: 'We’ll spin a globe, close our eyes and go wherever it stops. Our first adventure as newlyweds.',
+      note: 'Celebrating with you is the greatest gift we could ask for. We know that joining us in Vallarta is a gift in itself, so please don’t feel you need to give anything more. If you’d still like to help send us off on our first adventure as husband and wife, a contribution to our honeymoon fund would mean the world to us.',
+      sign: 'With love,',
+      btn: 'Honeymoon fund'
+    };
+    const es = {
+      back: 'Volver al sitio',
+      eyebrow: 'La luna de miel',
+      title: 'A donde nos lleve el mapa',
+      sub: 'Vamos a girar un globo terráqueo, cerrar los ojos e ir a donde se detenga. Nuestra primera aventura como recién casados.',
+      note: 'Celebrar con ustedes es el mejor regalo que podríamos pedir. Sabemos que acompañarnos en Vallarta ya es un regalo en sí, así que no sientan que deben darnos nada más. Si aun así quieren ayudarnos a emprender nuestra primera aventura como esposos, una contribución a nuestro fondo de luna de miel significaría muchísimo para nosotros.',
+      sign: 'Con cariño,',
+      btn: 'Fondo de luna de miel'
+    };
+    return this.state.lang === 'es' ? es : en;
+  }
+  renderVals() {
+    // Replace with the honeymoon fund link (Venmo, PayPal, etc.) when you have it.
+    const FUND_URL = '#honeymoon-fund-coming-soon';
+    const isEs = this.state.lang === 'es';
+    return {
+      t: this.copy(),
+      fundUrl: FUND_URL,
+      switchEn: () => this.setState({ lang: 'en' }),
+      switchEs: () => this.setState({ lang: 'es' }),
+      enColor: isEs ? '#7D8E92' : '#0E3B4A', enWeight: isEs ? '400' : '500',
+      esColor: isEs ? '#0E3B4A' : '#7D8E92', esWeight: isEs ? '500' : '400'
+    };
+  }
+}
+
+mountDC(Component, [{"t":"div","a":{"style":"container-type: inline-size; font-family: Jost, sans-serif; color: #F7F2EA; background: #0E3B4A; min-height: 100vh; display: flex; flex-direction: column"},"c":[{"t":"header","a":{"style":"position: sticky; top: 0; z-index: 10; background: rgba(247,242,234,.94); border-bottom: 1px solid rgba(14,59,74,.12)"},"c":[{"t":"nav","a":{"style":"max-width: 1100px; margin: 0 auto; padding: 16px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px"},"c":[{"t":"a","a":{"href":"/","style":"font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; letter-spacing: 2px; text-decoration: none; color: #0E3B4A"},"c":["R ",{"t":"span","a":{"style":"font-style: italic; color: #4E6B4A"},"c":["&"]}," D"]},{"t":"div","a":{"style":"display: flex; align-items: center; gap: 20px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase"},"c":[{"t":"div","a":{"style":"display: flex; align-items: center; gap: 2px"},"c":[{"t":"button","a":{"class":"lang-sw","onClick":"{{switchEn}}","style":"color: {{enColor}}; font-weight: {{enWeight}}"},"c":["EN"]},{"t":"span","a":{"aria-hidden":"true","style":"color: #9AA9AC"},"c":["·"]},{"t":"button","a":{"class":"lang-sw","onClick":"{{switchEs}}","style":"color: {{esColor}}; font-weight: {{esWeight}}"},"c":["ES"]}]},{"t":"a","a":{"href":"/","class":"navback","style":"text-decoration: none; color: #0E3B4A"},"c":["{{t.back}}"]}]}]}]},{"t":"section","a":{"class":"hm-hero","style":"position: relative; flex: 1 0 auto; overflow: hidden; min-height: clamp(640px, 88vh, 980px); display: flex; align-items: center; justify-content: center; padding: clamp(72px, 12cqi, 120px) 20px; text-align: center; background: #0E3B4A"},"c":[{"t":"video","a":{"class":"hm-video","src":"/_blob/c55f48d3b67dd28c185de8decc65735c","poster":"/_blob/83246ea8c39358e1aa6515e266ea871b","autoplay":"true","muted":"true","loop":"true","playsinline":"true","preload":"auto","aria-hidden":"true","style":"position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%"},"c":[]},{"t":"div","a":{"aria-hidden":"true","style":"position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(6,22,28,.62) 0%, rgba(6,22,28,.5) 55%, rgba(6,22,28,.38) 100%), linear-gradient(180deg, rgba(6,22,28,.35) 0%, rgba(6,22,28,.15) 40%, rgba(6,22,28,.55) 100%)"},"c":[]},{"t":"div","a":{"style":"position: relative; max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 18px; text-shadow: 0 1px 2px rgba(0,0,0,.35), 0 2px 24px rgba(0,0,0,.45)"},"c":[{"t":"p","a":{"class":"rise d1","style":"margin: 0; font-size: 13px; letter-spacing: 5px; text-transform: uppercase; color: #DDE6D5"},"c":["{{t.eyebrow}}"]},{"t":"h1","a":{"class":"rise d2","style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(48px, 11cqi, 84px); line-height: 1.02; color: #F7F2EA"},"c":["{{t.title}}"]},{"t":"p","a":{"class":"rise d3","style":"margin: 0; max-width: 520px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(22px, 4.6cqi, 28px); line-height: 1.4; color: #EAF0EF"},"c":["{{t.sub}}"]},{"t":"div","a":{"class":"rise d4","style":"width: 100%; max-width: 520px; box-sizing: border-box; margin-top: 18px; background: rgba(9,32,40,.4); border: 1px solid rgba(247,242,234,.22); border-radius: 18px; padding: clamp(24px, 6cqi, 34px) clamp(22px, 6cqi, 36px); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); display: flex; flex-direction: column; align-items: center; gap: 16px; text-shadow: none"},"c":[{"t":"p","a":{"style":"margin: 0; font-size: 16px; line-height: 1.8; color: #F7F2EA"},"c":["{{t.note}}"]},{"t":"p","a":{"style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: #DDE6D5"},"c":["{{t.sign}}",{"t":"br","a":{},"c":[]},"Ramsey & Daniela"]},{"t":"a","a":{"href":"{{fundUrl}}","target":"_blank","rel":"noopener noreferrer","class":"hm-btn","style":"margin-top: 6px; text-decoration: none; color: #F7F2EA; border: 1px solid #F7F2EA; padding: 16px 40px; border-radius: 999px; font-size: 13px; letter-spacing: 3px; text-transform: uppercase"},"c":["{{t.btn}}"]}]}]}]},{"t":"footer","a":{"style":"padding: 40px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px; background: #0E3B4A"},"c":[{"t":"p","a":{"style":"margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 34px; color: #F7F2EA"},"c":["R ",{"t":"span","a":{"style":"font-style: italic; color: #DDE6D5"},"c":["&"]}," D"]},{"t":"p","a":{"style":"margin: 0; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: #BFD3D6"},"c":["05 · 29 · 2027 · Puerto Vallarta"]}]}]}], document.getElementById('app'));
+</script>
+</body>
+</html>

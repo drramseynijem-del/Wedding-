@@ -2,5 +2,5 @@
 <script>
 // Send stray links to the right page: /attending (any case, with or without slash) goes to the next-steps page, anything else to the home page.
 var p = location.pathname.toLowerCase().replace(/\/+$/, '');
-location.replace(p === '/attending' || p === '/attending/index.html' ? '/attending/' : '/');
+location.replace(p === '/attending' || p === '/attending/index.html' ? '/attending/' : p === '/honeymoon' ? '/honeymoon/' : '/');
 </script></head><body style="font-family:Georgia,serif;background:#F7F2EA;color:#0E3B4A;text-align:center;padding:80px 20px"><p><a href="/" style="color:#0E3B4A">Ramsey &amp; Daniela</a></p></body></html>
