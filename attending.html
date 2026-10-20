@@ -66,8 +66,22 @@ class Component extends DCLogic {
   constructor(props) {
     super(props);
     this.state = { lang: 'en', done: {}, songDraft: '', song: '', bk: false };
+    try {
+      const saved = JSON.parse(localStorage.getItem('rd-wedding-steps') || '{}');
+      if (saved.done) this.state.done = saved.done;
+      if (saved.lang === 'es' || saved.lang === 'en') this.state.lang = saved.lang;
+    } catch (err) {}
+    try {
+      const q = new URLSearchParams(location.search).get('lang');
+      if (q === 'es' || q === 'en') this.state.lang = q;
+    } catch (err) {}
+  }
+  saveSteps() {
+    // Checkmarks are remembered on this phone or computer so guests can pick up where they left off.
+    try { localStorage.setItem('rd-wedding-steps', JSON.stringify({ done: this.state.done, lang: this.state.lang })); } catch (err) {}
   }
   componentDidUpdate() {
+    this.saveSteps();
     if (this.state.bk && !this.bkFocused) {
       this.bkFocused = true;
       this.prevOverflow = document.body.style.overflow;
