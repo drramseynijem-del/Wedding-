@@ -238,7 +238,7 @@ class Component extends DCLogic {
     }
     if (this.state.rsvp === 'yes') {
       // Straight to the attending page; it is the thank-you. The RSVP keeps sending in the background (keepalive).
-      window.location.assign('/attending/' + (this.state.lang === 'es' ? '?lang=es' : ''));
+      window.location.assign('/attending/?rsvp=1' + (this.state.lang === 'es' ? '&lang=es' : ''));
     } else {
       if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
       this.setState({ submitted: true, byeOpen: true });
