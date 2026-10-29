@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Send invite · R &amp; D</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #F7F2EA; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; color: #3E4C50; }
+  .card { width: 100%; max-width: 440px; box-sizing: border-box; margin: 16px; background: #fff; border-radius: 18px; padding: 28px 22px; box-shadow: 0 12px 32px rgba(14,59,74,.12); display: flex; flex-direction: column; gap: 16px; }
+  .mark { font-family: Georgia, serif; font-size: 28px; color: #0E3B4A; letter-spacing: 2px; text-align: center; }
+  .mark i { color: #4E6B4A; }
+  .to { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #4E6B4A; text-align: center; }
+  .msg { background: #F7F2EA; border-radius: 12px; padding: 14px 16px; font-size: 15px; line-height: 1.55; white-space: pre-wrap; word-break: break-word; }
+  a.btn, button.btn { display: block; width: 100%; box-sizing: border-box; text-align: center; text-decoration: none; padding: 16px 20px; border-radius: 999px; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; font-family: inherit; cursor: pointer; }
+  a.btn { background: #0E3B4A; color: #F7F2EA; border: 0; }
+  button.btn { background: transparent; color: #0E3B4A; border: 1px solid #0E3B4A; }
+  .err { text-align: center; font-size: 15px; }
+</style>
+</head>
+<body>
+<div class="card" id="card">
+  <div class="mark">R <i>&amp;</i> D</div>
+  <div class="to" id="to"></div>
+  <div class="msg" id="msg"></div>
+  <a class="btn" id="open" href="#">Open in Messages</a>
+  <button class="btn" id="copy" type="button">Copy message</button>
+</div>
+<script>
+(function () {
+  // Everything rides in the #hash, so the phone number and message never reach a server.
+  var p = new URLSearchParams(location.hash.replace(/^#/, ''));
+  var to = (p.get('to') || '').replace(/[^\d+]/g, '');
+  var body = p.get('body') || '';
+  var card = document.getElementById('card');
+  if (!to || !body) { card.innerHTML = '<div class="mark">R <i>&amp;</i> D</div><p class="err">This link is missing a phone number or message.</p>'; return; }
+  if (to.charAt(0) !== '+' && to.length === 10) to = '+1' + to;   // US numbers without a country code
+  var ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var href = 'sms:' + to + (ios ? '&' : '?') + 'body=' + encodeURIComponent(body);
+  document.getElementById('to').textContent = 'To ' + to;
+  document.getElementById('msg').textContent = body;
+  var open = document.getElementById('open');
+  open.href = href;
+  document.getElementById('copy').addEventListener('click', function () {
+    var b = this;
+    function done() { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy message'; }, 1800); }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(body).then(done, function () {});
+  });
+  // Try to jump straight into Messages; the button stays as a backup.
+  setTimeout(function () { location.href = href; }, 250);
+})();
+</script>
+</body>
+</html>
